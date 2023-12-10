@@ -28,10 +28,14 @@ func main() {
 	address2 := &address1 //menggunakan pointer
 
 	address2.city = "Jakarta"
+	fmt.Println(address1)
+	fmt.Println(address2)
 
+	//asterisk operator (*)
 	*address2 = Address{"Malang", "Jawa Timur", "Indonesia"} //menggunakan * untuk merubah data yang paling awal
+	// address2 = &Address{"Malang", "Jawa Timur", "Indonesia"}
 
-	// var address3 *Address = &Address{"Surabaya", "Jawa TImur", "Indonesia"} //pointer untuk membuat data baru
+	var address3 *Address = &Address{"Surabaya", "Jawa TImur", "Indonesia"} //pointer untuk membuat data baru
 
 	var address4 *Address = new(Address) //pointer untuk membuat data baru tapi datanya kosong
 	// address4.city = "Bandung"
@@ -39,6 +43,7 @@ func main() {
 
 	fmt.Println(address1)
 	fmt.Println(address2)
+	fmt.Println(address3)
 	fmt.Println(address4)
 
 	// pointer di function
