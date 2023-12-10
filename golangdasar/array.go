@@ -1,4 +1,4 @@
-package golangdasar
+package main
 
 import "fmt"
 
